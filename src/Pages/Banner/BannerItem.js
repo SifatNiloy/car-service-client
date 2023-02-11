@@ -1,8 +1,9 @@
 import React from 'react';
 
-const BannerItem = ({image}) => {
+const BannerItem = ({slide}) => {
+    const {image,id, prev, next}= slide;
     return (
-        <div id="slide1" className="carousel-item relative w-full">
+        <div id={`slide${id}`} className="carousel-item relative w-full">
             <div className="carousel-img">
                 <img src={image} className="w-full" alt='' />
             </div>
@@ -25,8 +26,8 @@ const BannerItem = ({image}) => {
                 </p>
             </div>
             <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide4" className="btn mr-5 btn-circle">❮</a>
-                <a href="#slide2" className="btn btn-circle">❯</a>
+                <a href={`#slide${prev}`} className="btn mr-5 btn-circle">❮</a>
+                <a href={`#slide${next}`} className="btn btn-circle">❯</a>
             </div>
         </div>
     );
