@@ -9,7 +9,7 @@ const ServiceCard = ({service}) => {
                 <h2 className="card-title">{title}</h2>
                 <div className='flex'>
                     <p className='text-red-600 font-semibold text-xl'>Price : ${price}</p>
-                    <img style={{ width: "20px", color:"red" }} src={arrow} alt="" />
+                    <img style={{ width: "20px", backgroundColor:"red" }} src={arrow} alt="" />
                 </div>
                 
             </div>
