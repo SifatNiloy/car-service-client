@@ -3,7 +3,7 @@ import person from '../../../assets/images/about_us/person.jpg'
 import parts from '../../../assets/images/about_us/parts.jpg'
 const About = () => {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero my-20">
             <div className="hero-content flex-col lg:flex-row">
                 <div className='w-1/2 relative'>
                     <img src={person} className='w-4/5 rounded-lg shadow-2xl' alt='' />
@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 <div className='w-1/2'>
                     <p className='text-2xl font-bold text-orange-600'>About Us</p>
-                    <h1 className="text-5xl font-bold">
+                    <h1 className="text-5xl my-5 font-bold">
                         We are qualified <br />
                         & of experience in this field</h1>
                     <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
