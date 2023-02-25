@@ -24,6 +24,23 @@ const Checkout = () => {
             message
 
         }
+        // if(phone.length <10 ){
+        //     alert('phone number should be 10 digit or longer ')
+        // }
+        // else{
+
+        // }
+
+        fetch(`http://localhost:5000/orders`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(err => console.error(err))
     }
     return (
         <div>
@@ -34,7 +51,7 @@ const Checkout = () => {
                     <input type="text" name='firstname' placeholder="First Name" className="input input-bordered w-full " />
                     <input type="text" name='lastname' placeholder="Last Name" className="input input-bordered w-full " />
                     <input type="text" name='phone' placeholder="Your Phone" className="input input-bordered w-full " />
-                    <input type="text" name='email' placeholder="Your Email" defaultValue={user?.email} readonly className="input input-bordered w-full " />
+                    <input type="text" name='email' placeholder="Your Email" defaultValue={user?.email} readOnly className="input input-bordered w-full " />
                 </div>
                 <textarea name='message' className="textarea textarea-bordered h-24 w-full" placeholder="Your Message"></textarea>
 

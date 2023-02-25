@@ -22,8 +22,7 @@ const Login = () => {
         <div className="hero w-full py-20">
             <div className="hero-content grid md:grid-cols-2 flex-col lg:flex-row py-12">
                 <div className="text-center lg:text-left pt-32">
-                    <img className='w-3/4' src={login} alt="" />
-                   
+                    <img className='w-3/4' src={login} alt="" />                   
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-12">
                     <h1 className="text-5xl text-center font-bold">Login </h1>
